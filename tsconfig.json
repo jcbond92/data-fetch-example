@@ -24,8 +24,9 @@
 		"checkJs": true,
 		"paths": {
 			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"]
+			"$lib/*": ["src/lib/*"],
+			"$static/*": ["static/*"]
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
+	"include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte", "static/**/*.*"]
 }

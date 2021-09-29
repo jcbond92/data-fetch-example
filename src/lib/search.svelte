@@ -33,6 +33,10 @@
 			});
 	};
 
+	const handleKeydown = (event) => {
+		if (event.keyCode === 13) starWarsRequest();
+	};
+
 	onMount(() => {
 		starWarsRequest();
 	});
@@ -42,8 +46,8 @@
 
 <section class="force--search">
 	<div class="force--search-input-wrapper">
-		<input bind:value={person} />
-		<button on:click={starWarsRequest} on:keypress={starWarsRequest} {disabled}>Search</button>
+		<input bind:value={person} on:keypress={handleKeydown} />
+		<button on:click={starWarsRequest} {disabled}>Search</button>
 	</div>
 </section>
 
