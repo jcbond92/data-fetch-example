@@ -1,0 +1,31 @@
+:root {
+	--pink: #ffc1ea;
+	--dark-blue: #0f0020;
+	--white: #fff;
+}
+
+/* https://www.fontspace.com/star-jedi-font-f9641 */
+@font-face {
+	font-family: 'Star Jedi';
+	src: url('StarJedi.woff2') format('woff2'), url('StarJedi.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body,
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+	margin: auto;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--dark-blue);
+}
